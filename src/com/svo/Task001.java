@@ -6,8 +6,6 @@ package com.svo;
 Найдите сумму всех чисел меньше 1000, кратных 3 или 5.
  */
 
-import java.util.ArrayList;
-
 public class Task001 {
     private final static long MAX_VALUE = 1000L;
 
@@ -22,7 +20,7 @@ public class Task001 {
         }
     }
 
-    long getAnswer() {
+    public long getAnswer() {
         long sum = 0;
         for (int i = 0; i < MAX_VALUE; i++) {
             boolean isMultiple3 = isMultiple(i, 3);//перевіряємо чи число кратне 3
